@@ -1,0 +1,49 @@
+body {
+    font-family:  Arial;
+    color: #444;
+    padding: 20px;
+}
+
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 1.5em;
+    margin: 10px;
+
+    /* list-style: inside square url() */
+    list-style-type: armenian;
+    list-style-position: inside;
+    list-style-image: url(https://www.hcareers.com/images/icons/mini-arrow-left.gif);
+}
+
+.container {
+    background: #eee;
+    border: 3px solid #777;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+p {
+    padding: 15px;
+}
+
+img {
+    width: 40%;
+    float: left;
+    margin: 15px;
+}
+
+.text1 {
+    background: rgba(228, 203, 203, 0.445);
+    float: left;
+    width: 300px;
+}
+
+.text2 {
+    clear: both;
+}
