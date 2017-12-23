@@ -2,7 +2,62 @@ body {
     font-family:  Arial;
     color: #444;
     padding: 20px;
+    background: url(soft_circle_scales.png);
 }
+
+.button {
+    display: inline-block;
+    margin: 40px;
+    width: 100px;
+    height: 100px;
+    background: url(soft_circle_scales.png);
+    cursor: pointer;
+
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+
+    box-shadow: inset 0 3px 20px rgba(0,0,0,.25), inset 0 2px 0 rgba(255, 255, 255, 0.6), inset 0 2px 0 rgba(0, 0, 0, 0.1), inset 0 0 20px rgba(0, 0, 0, 0.1);
+
+    -moz-box-shadow: 0 3px 20px rgba(0,0,0,.25), inset 0 2px 0 rgba(255, 255, 255, 0.6), inset 0 2px 0 rgba(0, 0, 0, 0.1), inset 0 0 20px rgba(0, 0, 0, 0.1);
+
+    -webkit-box-shadow: 0 3px 20px rgba(0,0,0,.25), inset 0 2px 0 rgba(255, 255, 255, 0.6), inset 0 2px 0 rgba(0, 0, 0, 0.1), inset 0 0 20px rgba(0, 0, 0, 0.1);
+}
+    
+.button:hover {
+    box-shadow: inset 0 0 20px rgba(0,0,0,.2), inset 0 2px 0 rgba(255, 255, 255, 0.4), inset 0 2px 0 rgba(0, 0, 0, 0.1);
+
+    -moz-box-shadow: inset 0 0 20px rgba(0,0,0,.2), inset 0 2px 0 rgba(255, 255, 255, 0.4), inset 0 2px 0 rgba(0, 0, 0, 0.1);
+
+    -webkit-box-shadow: inset 0 0 20px rgba(0,0,0,.2), inset 0 2px 0 rgba(255, 255, 255, 0.4), inset 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.button:hover::after {
+    background-position: center 52%;
+}
+
+.button::after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    display: block;
+    opacity: .7;
+}
+
+.btn-3d-cube::after {
+    background: url(http://www.defaulticon.com/images/icons32x32/3D-Cube.png?itok=IXHcJaTO) center no-repeat;
+}
+
+.btn-bank::after {
+    background: url(http://www.defaulticon.com/images/icons32x32/bank_0.png?itok=xrTM4lcc) center no-repeat;;
+}
+
+.btn-connect::after {
+ background: url(http://www.defaulticon.com/images/icons32x32/connect.png?itok=l9VAKqNG) center no-repeat;;
+}
+
+
+
 
 ul {
     font-family: Arial, Helvetica, sans-serif;
